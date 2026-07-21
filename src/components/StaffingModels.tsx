@@ -50,15 +50,15 @@ export default function StaffingModels({ onSelectModel }: StaffingModelsProps) {
   ];
 
   return (
-    <section id="staffing-models" className="py-16 sm:py-24 border-b border-zinc-200/80 bg-white relative w-full max-w-full overflow-hidden">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 text-left w-full max-w-full">
+    <section id="staffing-models" className="py-24 border-b border-zinc-200/80 bg-white relative overflow-hidden">
+      <div className="max-w-7xl mx-auto px-6 text-left">
         
         <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-6 mb-16">
           <div>
             <span className="text-brand-emerald font-semibold text-xs tracking-widest uppercase block mb-2 font-mono">
               Top Tier Agency Engagement Models
             </span>
-            <h2 className="font-serif italic font-normal text-3xl sm:text-5xl text-zinc-900 tracking-tight">
+            <h2 className="font-serif italic font-normal text-5xl text-zinc-900 tracking-tight">
               Flexible Staffing Solutions
             </h2>
             <p className="text-zinc-500 text-sm font-light mt-2 max-w-xl">
