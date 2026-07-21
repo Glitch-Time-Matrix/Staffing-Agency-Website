@@ -67,8 +67,8 @@ export default function SalaryCalculator() {
   };
 
   return (
-    <section id="salary-calculator" className="py-16 sm:py-24 border-b border-zinc-200/80 bg-[#fafafa] relative w-full max-w-full overflow-hidden">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 text-left w-full max-w-full">
+    <section id="salary-calculator" className="py-24 border-b border-zinc-200/80 bg-[#fafafa] relative overflow-hidden">
+      <div className="max-w-7xl mx-auto px-6 text-left">
         
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           
@@ -76,7 +76,7 @@ export default function SalaryCalculator() {
             <span className="text-brand-emerald font-semibold text-xs tracking-widest uppercase block mb-3 font-mono">
               Compensation Benchmark Guide
             </span>
-            <h2 className="font-serif italic font-normal text-3xl sm:text-5xl text-zinc-900 tracking-tight leading-tight mb-4">
+            <h2 className="font-serif italic font-normal text-5xl text-zinc-900 tracking-tight leading-tight mb-4">
               Executive Salary & Equity Calculator.
             </h2>
             <p className="text-zinc-600 text-sm font-light leading-relaxed mb-6">

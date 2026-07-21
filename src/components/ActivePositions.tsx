@@ -41,15 +41,15 @@ export default function ActivePositions({
   };
 
   return (
-    <section id="active-roles" className="py-16 sm:py-24 border-b border-zinc-200/80 bg-[#fafafa] relative w-full max-w-full overflow-hidden">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 w-full max-w-full">
+    <section id="active-roles" className="py-24 border-b border-zinc-200/80 bg-[#fafafa] relative overflow-hidden">
+      <div className="max-w-7xl mx-auto px-6">
         
         <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-6 mb-12 text-left">
           <div>
             <span className="text-brand-emerald font-semibold text-xs tracking-widest uppercase block mb-2 font-mono">
               Live Placements Directory
             </span>
-            <h2 className="font-serif italic font-normal text-3xl sm:text-5xl text-zinc-900 tracking-tight">
+            <h2 className="font-serif italic font-normal text-5xl text-zinc-900 tracking-tight">
               Active Agency Placements
             </h2>
             <p className="text-zinc-600 text-sm font-light mt-2 max-w-xl">
