@@ -1,0 +1,7 @@
+{
+  "name": "recruiting-agency-website",
+  "private": true,
+  "workspaces": [
+    "staffing-and-recruitment-agency"
+  ]
+}
