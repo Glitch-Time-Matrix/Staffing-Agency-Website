@@ -50,8 +50,8 @@ export default function StaffingModels({ onSelectModel }: StaffingModelsProps) {
   ];
 
   return (
-    <section id="staffing-models" className="py-24 border-b border-zinc-200/80 bg-white relative">
-      <div className="max-w-7xl mx-auto px-6 text-left">
+    <section id="staffing-models" className="py-16 sm:py-24 border-b border-zinc-200/80 bg-white relative w-full max-w-full overflow-hidden">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 text-left w-full max-w-full">
         
         <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-6 mb-16">
           <div>

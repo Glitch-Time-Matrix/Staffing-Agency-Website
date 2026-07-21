@@ -97,8 +97,8 @@ export default function Specializations({ onSelectSpecialization }: Specializati
   const IconComponent = activeSpec.icon;
 
   return (
-    <section id="specializations" className="py-24 border-b border-zinc-200/80 bg-[#fafafa] relative">
-      <div className="max-w-7xl mx-auto px-6 text-left">
+    <section id="specializations" className="py-16 sm:py-24 border-b border-zinc-200/80 bg-[#fafafa] relative w-full max-w-full overflow-hidden">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 text-left w-full max-w-full">
         
         <div className="max-w-3xl mb-16">
           <span className="text-brand-emerald font-semibold text-xs tracking-widest uppercase block mb-3 font-mono">
