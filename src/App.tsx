@@ -143,16 +143,16 @@ export default function App() {
 
         <SocialProof />
 
-        <section id="about-rupa" className="py-16 sm:py-24 px-4 sm:px-6 w-full max-w-full bg-white relative border-b border-zinc-200/80 overflow-hidden">
-          <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8 sm:gap-12 items-center text-left w-full max-w-full">
+        <section id="about-rupa" className="py-24 px-6 bg-white relative border-b border-zinc-200/80 overflow-hidden">
+          <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center text-left">
             <div className="lg:col-span-6">
               <span className="text-brand-emerald text-xs font-mono uppercase tracking-widest block mb-3 font-semibold">
                 About Rupa Employment Agency
               </span>
-              <h2 className="font-serif italic font-normal text-3xl sm:text-5xl text-zinc-900 tracking-tight leading-tight mb-6">
+              <h2 className="font-serif italic font-normal text-5xl text-zinc-900 tracking-tight leading-tight mb-6">
                 Serving NYC with trusted job placements for over 15 years.
               </h2>
-              <p className="text-zinc-600 text-sm sm:text-base font-light leading-relaxed mb-6">
+              <p className="text-zinc-600 text-base font-light leading-relaxed mb-6">
                 Rupa Employment Agency has been serving the residents of NYC with job placements for the last 15 years and earned the respect of the communities here. Finding a new job can easily drain your energy and motivation. Contrarily, the hunt for topnotch employees costs substantial time and money. What is the perfect way out of this conundrum? Rupa Employment Agency in NYC stands out as the best reliable partner in hiring and job searching.
               </p>
               
@@ -182,7 +182,7 @@ export default function App() {
               <div className="flex justify-between items-start border-b border-zinc-200 pb-4">
                 <div>
                   <h3 className="text-zinc-900 font-serif italic text-2xl font-normal">Rupa Employment Agency</h3>
-                  <p className="text-zinc-500 text-xs font-mono mt-0.5">Public Company · Founded 2005</p>
+                  <p className="text-zinc-500 text-xs font-mono mt-0.5">Public Company \u00b7 Founded 2005</p>
                 </div>
                 <span className="px-3 py-1 rounded-full bg-emerald-50 border border-emerald-200 text-brand-emerald font-mono text-xs font-semibold">
                   Primary Location
@@ -233,8 +233,8 @@ export default function App() {
 
       </main>
 
-      <footer className="w-full max-w-full bg-[#f4f4f6] border-t border-zinc-200/80 py-12 sm:py-16 px-4 sm:px-6 text-left relative overflow-hidden">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-8 sm:gap-12 relative z-10 w-full max-w-full">
+      <footer className="bg-[#f4f4f6] border-t border-zinc-200/80 py-16 px-6 text-left relative overflow-hidden">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-12 relative z-10">
           <div className="md:col-span-5 flex flex-col items-start gap-4">
             <div className="flex items-center gap-3">
               <div className="flex size-8 items-center justify-center rounded-lg bg-zinc-900 text-white font-serif text-sm font-bold select-none border border-zinc-800">
@@ -254,7 +254,7 @@ export default function App() {
               </p>
               <p className="flex items-center gap-1.5 font-medium text-zinc-400">
                 <Globe className="size-3 text-zinc-500" />
-                Primary NYC Location · Staffing & Recruiting
+                Primary NYC Location \u00b7 Staffing & Recruiting
               </p>
             </div>
           </div>
@@ -283,10 +283,10 @@ export default function App() {
         </div>
 
         <div className="max-w-7xl mx-auto mt-16 pt-8 border-t border-zinc-200 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-zinc-500 font-mono">
-          <p>© {new Date().getFullYear()} Rupa Employment Agency. All rights reserved.</p>
+          <p>\u00a9 {new Date().getFullYear()} Rupa Employment Agency. All rights reserved.</p>
           <div className="flex gap-4">
             <a href="#" className="hover:text-zinc-800">Privacy Protocol</a>
-            <span>·</span>
+            <span>\u00b7</span>
             <a href="#" className="hover:text-zinc-800">Terms of Placement</a>
           </div>
         </div>
