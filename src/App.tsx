@@ -99,7 +99,7 @@ export default function App() {
   const totalSavedCount = savedJobs.length + savedCandidates.length;
 
   return (
-    <div className="min-h-screen bg-[#fafafa] text-[#18181b] flex flex-col relative antialiased selection:bg-brand-emerald selection:text-white">
+    <div className="min-h-screen bg-[#fafafa] text-[#18181b] flex flex-col relative antialiased selection:bg-brand-emerald selection:text-white w-full max-w-full overflow-x-hidden">
       <Header 
         currentTab={currentTab} 
         setCurrentTab={setCurrentTab}
@@ -117,7 +117,7 @@ export default function App() {
         onSelectJobForMatch={() => scrollToActiveRoles()}
       />
 
-      <main className="flex-1 flex flex-col items-center w-full">
+      <main className="flex-1 flex flex-col items-center w-full max-w-full overflow-x-hidden">
         <Hero 
           onExploreClick={scrollToActiveRoles} 
           savedCandidateIds={savedCandidates.map((c) => c.id)}
@@ -143,8 +143,8 @@ export default function App() {
 
         <SocialProof />
 
-        <section id="about-rupa" className="py-24 px-6 w-full bg-white relative border-b border-zinc-200/80">
-          <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center text-left">
+        <section id="about-rupa" className="py-16 sm:py-24 px-4 sm:px-6 w-full max-w-full bg-white relative border-b border-zinc-200/80 overflow-hidden">
+          <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8 sm:gap-12 items-center text-left w-full max-w-full">
             <div className="lg:col-span-6">
               <span className="text-brand-emerald text-xs font-mono uppercase tracking-widest block mb-3 font-semibold">
                 About Rupa Employment Agency
@@ -233,8 +233,8 @@ export default function App() {
 
       </main>
 
-      <footer className="w-full bg-[#f4f4f6] border-t border-zinc-200/80 py-16 px-6 text-left relative overflow-hidden">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-12 relative z-10">
+      <footer className="w-full max-w-full bg-[#f4f4f6] border-t border-zinc-200/80 py-12 sm:py-16 px-4 sm:px-6 text-left relative overflow-hidden">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-8 sm:gap-12 relative z-10 w-full max-w-full">
           <div className="md:col-span-5 flex flex-col items-start gap-4">
             <div className="flex items-center gap-3">
               <div className="flex size-8 items-center justify-center rounded-lg bg-zinc-900 text-white font-serif text-sm font-bold select-none border border-zinc-800">

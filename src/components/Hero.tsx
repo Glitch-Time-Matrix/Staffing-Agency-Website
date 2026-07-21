@@ -54,41 +54,41 @@ export default function Hero({
   onToggleSaveCandidate
 }: HeroProps) {
   return (
-    <section className="relative w-full pt-28 pb-16 md:pt-36 md:pb-24 px-6 grid-bg border-b border-zinc-200/80 overflow-hidden bg-[#fafafa]">
-      <div className="absolute top-[10%] left-[15%] w-[500px] h-[500px] rounded-full bg-emerald-500/5 blur-[140px] pointer-events-none pulse-glow-bg"></div>
-      <div className="absolute bottom-[20%] right-[10%] w-[550px] h-[550px] rounded-full bg-blue-500/5 blur-[150px] pointer-events-none pulse-glow-bg"></div>
+    <section className="relative w-full max-w-full pt-24 pb-12 sm:pt-32 sm:pb-20 md:pt-36 md:pb-24 px-4 sm:px-6 grid-bg border-b border-zinc-200/80 overflow-hidden bg-[#fafafa]">
+      <div className="absolute top-[10%] left-[5%] sm:left-[15%] w-[260px] sm:w-[500px] h-[260px] sm:h-[500px] rounded-full bg-emerald-500/5 blur-[100px] sm:blur-[140px] pointer-events-none pulse-glow-bg"></div>
+      <div className="absolute bottom-[20%] right-[5%] sm:right-[10%] w-[280px] sm:w-[550px] h-[280px] sm:h-[550px] rounded-full bg-blue-500/5 blur-[100px] sm:blur-[150px] pointer-events-none pulse-glow-bg"></div>
 
-      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center relative z-10">
-        <div className="lg:col-span-7 flex flex-col items-start text-left">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8 sm:gap-12 items-center relative z-10 w-full max-w-full">
+        <div className="lg:col-span-7 flex flex-col items-start text-left w-full max-w-full">
           
-          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-white border border-zinc-200/80 text-xs font-mono font-medium text-zinc-700 mb-6 shadow-xs">
-            <span className="flex size-2 rounded-full bg-brand-emerald animate-pulse"></span>
-            RUPA EMPLOYMENT AGENCY · SERVING NYC FOR 15+ YEARS (EST. 2005)
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white border border-zinc-200/80 text-[10px] sm:text-xs font-mono font-medium text-zinc-700 mb-6 shadow-xs max-w-full flex-wrap">
+            <span className="flex size-2 rounded-full bg-brand-emerald animate-pulse shrink-0"></span>
+            <span className="leading-tight">RUPA AGENCY · SERVING NYC FOR 15+ YEARS</span>
           </div>
 
-          <h1 className="font-serif italic font-normal text-4xl sm:text-6xl lg:text-[68px] text-zinc-900 tracking-tight leading-[1.04] mb-6">
+          <h1 className="font-serif italic font-normal text-3xl sm:text-5xl lg:text-[64px] text-zinc-900 tracking-tight leading-[1.08] mb-5 break-words max-w-full">
             Your most reliable partner in <br className="hidden sm:inline"/>
             <span className="not-italic font-bold font-sans text-transparent bg-clip-text bg-gradient-to-r from-zinc-900 via-zinc-800 to-zinc-600">
               NYC hiring & job search.
             </span>
           </h1>
 
-          <p className="text-zinc-600 text-base sm:text-lg font-light leading-relaxed mb-8 max-w-xl">
+          <p className="text-zinc-600 text-sm sm:text-base font-light leading-relaxed mb-6 sm:mb-8 max-w-xl">
             Rupa Employment Agency has been serving the residents and enterprises of New York City for over 15 years. Finding a job or top-notch talent can drain your energy—our Elmhurst team is your trusted partner.
           </p>
 
-          <div className="flex flex-wrap items-center gap-3 text-xs font-mono text-zinc-700 mb-10">
-            <span className="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white border border-zinc-200/80 shadow-xs">
-              <MapPin className="size-3.5 text-brand-emerald" aria-hidden="true" />
-              75-32 Broadway, Elmhurst, NY 11373
+          <div className="flex flex-wrap items-center gap-2 sm:gap-3 text-[11px] sm:text-xs font-mono text-zinc-700 mb-8 sm:mb-10 max-w-full">
+            <span className="flex items-center gap-1.5 px-2.5 sm:px-3 py-1.5 rounded-full bg-white border border-zinc-200/80 shadow-xs max-w-full">
+              <MapPin className="size-3.5 text-brand-emerald shrink-0" aria-hidden="true" />
+              <span className="truncate">75-32 Broadway, Elmhurst, NY</span>
             </span>
-            <span className="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white border border-zinc-200/80 shadow-xs">
-              <CheckCircle2 className="size-3.5 text-brand-slate" aria-hidden="true" />
-              15 Years NYC Respect
+            <span className="flex items-center gap-1.5 px-2.5 sm:px-3 py-1.5 rounded-full bg-white border border-zinc-200/80 shadow-xs">
+              <CheckCircle2 className="size-3.5 text-brand-slate shrink-0" aria-hidden="true" />
+              15 Yrs NYC Service
             </span>
-            <span className="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white border border-zinc-200/80 shadow-xs">
-              <CheckCircle2 className="size-3.5 text-amber-600" aria-hidden="true" />
-              90-Day Placement Warranty
+            <span className="flex items-center gap-1.5 px-2.5 sm:px-3 py-1.5 rounded-full bg-white border border-zinc-200/80 shadow-xs">
+              <CheckCircle2 className="size-3.5 text-amber-600 shrink-0" aria-hidden="true" />
+              90-Day Warranty
             </span>
           </div>
 

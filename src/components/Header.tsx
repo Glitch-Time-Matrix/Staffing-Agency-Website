@@ -1,5 +1,5 @@
 import React from "react";
-import { Sparkles, Bookmark, Layers, Grid, Briefcase } from "lucide-react";
+import { Sparkles, Bookmark, Layers, Grid } from "lucide-react";
 
 interface HeaderProps {
   currentTab: "candidate" | "employer";
@@ -15,24 +15,27 @@ export default function Header({
   onOpenSaved
 }: HeaderProps) {
   return (
-    <header className="fixed top-4 inset-x-0 z-40 flex justify-center px-4 pointer-events-none">
-      <div className="pointer-events-auto cosmos-dock rounded-full px-4 sm:px-6 py-2.5 flex items-center justify-between gap-4 sm:gap-8 max-w-4xl w-full border border-zinc-200/80 shadow-lg shadow-black/5 transition-all duration-300">
+    <header className="fixed top-2 sm:top-4 inset-x-0 z-40 flex justify-center px-2 sm:px-4 pointer-events-none w-full max-w-full">
+      {/* Cosmos Light Floating Dock Container */}
+      <div className="pointer-events-auto cosmos-dock rounded-full px-3 sm:px-6 py-2 sm:py-2.5 flex items-center justify-between gap-2 sm:gap-8 max-w-4xl w-full mx-auto border border-zinc-200/80 shadow-lg shadow-black/5 transition-all duration-300">
         
-        <a href="#" className="flex items-center gap-2.5 group">
-          <div className="size-8 rounded-full bg-zinc-900 border border-zinc-800 flex items-center justify-center text-white font-serif text-sm font-bold group-hover:bg-brand-emerald transition-colors">
+        {/* Brand Badge */}
+        <a href="#" className="flex items-center gap-2 group shrink-0">
+          <div className="size-7 sm:size-8 rounded-full bg-zinc-900 border border-zinc-800 flex items-center justify-center text-white font-serif text-xs sm:text-sm font-bold group-hover:bg-brand-emerald transition-colors shrink-0">
             R
           </div>
           <div className="flex items-center gap-1.5">
-            <span className="font-serif italic font-semibold text-xl text-zinc-900 tracking-tight">
+            <span className="font-serif italic font-semibold text-lg sm:text-xl text-zinc-900 tracking-tight">
               RUPA
             </span>
-            <span className="hidden sm:inline-block size-1 rounded-full bg-brand-emerald"></span>
-            <span className="hidden sm:inline-block text-[10px] font-mono text-zinc-500 uppercase tracking-widest font-medium">
+            <span className="hidden md:inline-block size-1 rounded-full bg-brand-emerald"></span>
+            <span className="hidden md:inline-block text-[10px] font-mono text-zinc-500 uppercase tracking-widest font-medium">
               Employment Agency
             </span>
           </div>
         </a>
 
+        {/* Navigation Links */}
         <nav aria-label="Main Navigation" className="hidden lg:flex items-center gap-6 text-xs font-mono text-zinc-600 font-medium">
           <a href="#active-roles" className="hover:text-zinc-900 transition-colors flex items-center gap-1">
             <Grid className="size-3 text-zinc-400" />
@@ -50,20 +53,22 @@ export default function Header({
           </a>
         </nav>
 
-        <div className="flex items-center gap-2 sm:gap-3">
+        {/* Action Controls */}
+        <div className="flex items-center gap-1.5 sm:gap-3 shrink-0">
           <a
             href="#active-roles"
-            className="flex items-center gap-1.5 px-4 py-1.5 rounded-full text-xs font-mono font-semibold bg-zinc-900 text-white shadow-xs hover:bg-zinc-800 transition-all pointer-events-auto"
+            className="flex items-center gap-1 sm:gap-1.5 px-3 sm:px-4 py-1.5 rounded-full text-[11px] sm:text-xs font-mono font-semibold bg-zinc-900 text-white shadow-xs hover:bg-zinc-800 transition-all pointer-events-auto shrink-0"
           >
-            <Sparkles className="size-3 text-brand-emerald" aria-hidden="true" />
-            <span>NYC Placements</span>
+            <Sparkles className="size-3 text-brand-emerald shrink-0" aria-hidden="true" />
+            <span>Placements</span>
           </a>
 
+          {/* Cosmos Saved Collection Button */}
           {onOpenSaved && (
             <button
               onClick={onOpenSaved}
               type="button"
-              className="relative p-2.5 rounded-full bg-zinc-100 hover:bg-zinc-200 border border-zinc-200/80 text-zinc-700 hover:text-zinc-900 transition-all flex items-center justify-center pointer-events-auto"
+              className="relative p-2 sm:p-2.5 rounded-full bg-zinc-100 hover:bg-zinc-200 border border-zinc-200/80 text-zinc-700 hover:text-zinc-900 transition-all flex items-center justify-center pointer-events-auto shrink-0"
               title="Open Saved Collection"
               aria-label="Saved Items"
             >
